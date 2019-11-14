@@ -1,0 +1,75 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+	a.navbar-brand(href='/') Ekjot Singh
+	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+		span.navbar-toggler-icon
+	#navbarSupportedContent.collapse.navbar-collapse
+		ul.navbar-nav.mr-auto
+			li.nav-item.active
+				a.nav-link(href='/')
+					| Home
+					span.sr-only (current)
+			li.nav-item
+				a.nav-link(href='/articles') Articles
+		ul.navbar-nav
+			//- Checking isLoggedIn from our middleware to change navigation
+			//- If we are logged in or not
+			if isLoggedIn
+				li.nav-item
+					a.nav-link(href='/logout') Logout
+			else
+				li.nav-item
+					a.nav-link(href='/login') Login
+				li.nav-item
+					a.nav-link(href='/register') Register
+body
+
+.bio
+h2.sm-heading.col-4
+|About Me 
+p
+	.projects.div.btn-dark.col-6.
+	EKjot Singh  is a web designer from India 
+
+	|  I spend my days with my hands in many different areas of web development from back end programming (PHP,SQL Database,Wordpress, ASP.NET on Rails) to front end engineering (HTML, CSS, and jQuery/Javascript), digital accessibility, user experience and visual design.
+	
+	
+	.job.job-1
+h2.sm-heading.col-4
+| Webshop
+.projects.btn-dark.col-4
+     
+    
+p
+| I’m extremely passionate about web development and design in all it’s forms and helping small businesses and artisans build and improve their online presence.
+| Aside from web development, I enjoy spending my time with my wife, sons, and daughter, brewing beer, taking photos and playing & watching sports (hockey, golf, and mixed martial arts to name a few).
+	
+h1.lg-heading.col-4
+| My
+span.text-secondary Work
+h2.sm-heading
+| Check out some of my projects...
+.projects
+.item
+a(href='#!')
+	img(src='https://designmodo.com/wp-content/uploads/2017/10/03-ilya-grigorik-portfolio.jpg', alt='Project')
+	a.btn-light(href='#')
+	i.fas.fa-eye
+	|Project
+
+	h1.lg-heading
+| Contact
+span.text-secondary Me
+	h2.sm-heading
+| This is how you can reach me...
+.boxes
+div
+span.text-secondary Email: 
+| Ekjotsingh1111@gmail.com
+span.text-secondary Phone: 
+|  (249) 989-1949
+br
+div
+span.text-secondary Address: 
+|14 McCown Road Scarbough, ON 
+
+  

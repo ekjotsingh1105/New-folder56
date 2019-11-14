@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+
+	p The user's role is: #{role}
+	if isLoggedIn
+		p Welcome to the site #{user.username}
+	else
+		p Welcome to #{title}
